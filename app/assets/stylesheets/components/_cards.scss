@@ -1,0 +1,38 @@
+.cards-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-list {
+  filter: $darkness_mask;
+  background-image: asset-url("film_img.jpg");
+  height: 320px;
+
+
+  a {
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+  }
+}
+
+.cards-movie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width:990px){
+  .cards-movie, .cards-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:600px){
+  .cards-movie, .cards-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,24 @@
+// Import your components CSS files here.
+@import "alert";
+@import "avatar";
+@import "form_legend_clear";
+@import "navbar";
+
+.logo {
+  background-image: asset-url("film_img.jpg");
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  filter: $darkness_mask;
+  h1, h2 {
+    font-weight: 800;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+  }
+}
